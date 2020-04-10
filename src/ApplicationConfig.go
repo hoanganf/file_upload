@@ -1,10 +1,10 @@
 package src
 
 import (
-	"./application"
-	"./infrastructure/client"
-	"./infrastructure/persistence"
 	"errors"
+	"github.com/hoanganf/file_upload/src/application"
+	"github.com/hoanganf/file_upload/src/infrastructure/client"
+	"github.com/hoanganf/file_upload/src/infrastructure/persistence"
 	"os"
 	"strconv"
 )

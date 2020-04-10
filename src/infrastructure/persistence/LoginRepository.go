@@ -1,10 +1,10 @@
 package persistence
 
 import (
-	"../client"
-	"../client/resource"
 	"encoding/json"
 	"fmt"
+	"github.com/hoanganf/file_upload/src/infrastructure/client"
+	"github.com/hoanganf/file_upload/src/infrastructure/client/resource"
 	"github.com/hoanganf/pos_domain/entity"
 	"github.com/hoanganf/pos_domain/entity/exception"
 	"github.com/hoanganf/pos_domain/repository"

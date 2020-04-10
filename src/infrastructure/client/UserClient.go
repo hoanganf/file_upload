@@ -1,7 +1,7 @@
 package client
 
 import (
-	"./resource"
+	"github.com/hoanganf/file_upload/src/infrastructure/client/resource"
 	"bytes"
 	"encoding/json"
 	"fmt"

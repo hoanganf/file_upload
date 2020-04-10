@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./src"
+	"github.com/hoanganf/file_upload/src"
 	"github.com/gin-gonic/gin"
 	"log"
 )
