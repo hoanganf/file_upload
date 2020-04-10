@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: pos-upload
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: pos-upload
+    spec:
+      containers:
+      - name: pos-upload
+        image: hoanganf/pos-upload:latest
+        ports:
+        - containerPort: 80
+        volumeMounts:
+          - name: pos-upload-persistent-storage
+            mountPath: /var/www/html/files
+      volumes:
+      - name: pos-upload-persistent-storage
+        persistentVolumeClaim:
+          claimName: pos-upload
